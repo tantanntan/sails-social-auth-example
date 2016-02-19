@@ -58,27 +58,27 @@ module.exports.http = {
   customMiddleware: function(app) {
 
     passport.use(new GitHubStrategy({
-      clientID: "YOUR_CLIENT_ID",
-      clientSecret: "YOUR_CLIENT_SECRET",
-      callbackURL: "http://localhost:1337/auth/github/callback"
+      clientID: "50a9ce99b2b00896a27f",
+      clientSecret: "8dd496b87b2a182e2bf35a041ebacca1a30c105d",
+      callbackURL: "https://intelliwork-tantanntan.c9users.io/auth/github/callback"
     }, verifyHandler));
 
     passport.use(new FacebookStrategy({
       clientID: "YOUR_CLIENT_ID",
       clientSecret: "YOUR_CLIENT_SECRET",
-      callbackURL: "http://localhost:1337/auth/facebook/callback"
+      callbackURL: "https://intelliwork-tantanntan.c9users.io/auth/facebook/callback"
     }, verifyHandler));
 
     passport.use(new GoogleStrategy({
       clientID: 'YOUR_CLIENT_ID',
       clientSecret: 'YOUR_CLIENT_SECRET',
-      callbackURL: 'http://localhost:1337/auth/google/callback'
+      callbackURL: 'https://intelliwork-tantanntan.c9users.io/auth/google/callback'
     }, verifyHandler));
 
     passport.use(new TwitterStrategy({
-      consumerKey: 'YOUR_CLIENT_ID',
-      consumerSecret: 'YOUR_CLIENT_SECRET',
-      callbackURL: 'http://localhost:1337/auth/twitter/callback'
+      consumerKey: 'zbsOAlQZRY1UIwtXzwKtRJvlN',
+      consumerSecret: 'mkg9V3wOvh6A5iMN47igk2hUHqh9iN2UFiEvuJlWH1v6z0zmgM',
+      callbackURL: 'https://intelliwork-tantanntan.c9users.io/auth/twitter/callback'
     }, verifyHandler));
 
     app.use(passport.initialize());
